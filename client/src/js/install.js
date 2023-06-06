@@ -18,10 +18,7 @@ butInstall.addEventListener('click', async () => {
 
   promptEvent.prompt();
 
-  // TODO: Notice line 7 above.  window.deferredPrompt should now be set to null.
 
-  // TODO: Notice line 8 above. We want the same line here, but the hidden value should be set to true.
-  // Insert line here
   window.deferredPrompt = null;
   butInstall.classList.toggle('hidden', true);
 });
