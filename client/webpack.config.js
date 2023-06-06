@@ -66,11 +66,11 @@ module.exports = () => {
       When all three plugins are configured this work is done.
     */
      new HtmlWebpackPlugin({
-      template: "./index.html"
+      template: "./index.html",
       title: 'J.A.T.E'
       }), 
      new InjectManifest({
-        swSrc: './src-sw.js'
+        swSrc: './src-sw.js',
         swDest:'src-sw.js'
       }),  new WebpackPwaManifest({
       fingerprints: false,
