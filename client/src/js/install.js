@@ -22,6 +22,8 @@ butInstall.addEventListener('click', async () => {
 
   // TODO: Notice line 8 above. We want the same line here, but the hidden value should be set to true.
   // Insert line here
+  window.deferredPrompt = null;
+  butInstall.classList.toggle('hidden', true);
 });
 
 window.addEventListener('appinstalled', (event) => {
